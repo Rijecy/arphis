@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@11.0.0" />
+    <script>
+    const { Client } = Appwrite;
+    </script>
     
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
         <a-nft
         type="nft"
-        url="https://rijecy.github.io/arphis/https://raw.githack.com/Rijecy/arphis/main/pic/b-a-w%20pushups/pu"
+        url="https://raw.githack.com/Rijecy/arphis/main/pic/b-a-w%20pushups/pu"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
