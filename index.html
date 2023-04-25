@@ -27,8 +27,10 @@
   <div class="arjs-loader">
     <div>Загрузка...</div>
   </div>
-  <a-scene vr-mode-ui='enabled: false;'
-  embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+  <a-scene vr-mode-ui="enabled: false;"
+  renderer="logarithmicDepthBuffer: true; precision: medium;"
+  embedded
+  arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
     <a-assets>
       <video id="pushup" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay loop="true"></video>
       <video id="situps" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/situps.mp4" autoplay loop="true"></video>
