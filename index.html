@@ -29,7 +29,9 @@
     <div>Loading, please wait...</div>
   </div>
   <a-scene>
-    <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+    <a-assets>
+    <video id="alpha2" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay muted></video>
+  </a-assets>
     <a-nft
       type="nft"
       url="https://raw.githack.com/Rijecy/arphis/main/pic/pushup-nft/pushup"
@@ -38,7 +40,11 @@
       smoothTolerance="0.01"
       smoothThreshold="5"
     > 
-      <a-video id="test"  scale="15 15 1" rotation = "-90 0 0" autoplay loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4"></a-video>
+    
+    <a-video id = "vid2"  scale="500 500 1" src="#alpha2" autoplay muted>
+      <video scale= "100 100 1" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4"></video>
+    </a-video>
+      <!-- <a-video id="test"  rotation = "-90 0 0" autoplay loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4"></a-video> -->
     </a-nft>
     <!-- position="200 0 -300" -->
     <!-- <a-nft 
