@@ -36,7 +36,7 @@
         >
             <a-assets>
                 <video
-                    id="vid"
+                    id="pushup"
                     src="video/pushup.mp4"
                     preload="auto"
                     response-type="arraybuffer"
@@ -47,8 +47,32 @@
                     muted
                     playsinline
                 ></video>
+                <video
+                    id="situps"
+                    src="video/situps.mp4"
+                    preload="auto"
+                    response-type="arraybuffer"
+                    loop
+                    crossorigin
+                    webkit-playsinline
+                    autoplay
+                    muted
+                    playsinline
+                ></video>
+                <video
+                    id="squat"
+                    src="video/squat.mp4"
+                    preload="auto"
+                    response-type="arraybuffer"
+                    loop
+                    crossorigin
+                    webkit-playsinline
+                    autoplay
+                    muted
+                    playsinline
+                ></video>
             </a-assets>
-
+            <!-- pushup -->
             <a-marker
                 type="pattern"
                 preset="custom"
@@ -64,7 +88,56 @@
                 id="markerA"
             >
                 <a-video
-                    src="#vid"
+                    src="#pushup"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
+            <!-- situp -->
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="pic/marker/situp-marker.patt"
+                videohandler
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-video
+                    src="#situps"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
+
+            <!-- situp -->
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="pic/marker/squats-marker.patt"
+                videohandler
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-video
+                    src="#squat"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
