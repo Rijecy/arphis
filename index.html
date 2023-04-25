@@ -27,12 +27,12 @@
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
-        vr-mode-ui="enabled: false;"
-        loading-screen="enabled: false;"
-        arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-        id="scene"
-        embedded
-        gesture-detector
+        vr-mode-ui="enabled: false"
+            loading-screen="enabled: false;"
+            arjs='sourceType: webcam; debugUIEnabled: false;'
+            id="scene"
+            embedded
+            gesture-detector
         >
             <a-assets>
                 <video
@@ -40,10 +40,11 @@
                     src="video/pushup.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
-                    autoplay = "true"
+                    autoplay
+                    muted
                     playsinline
                 ></video>
                 <video
@@ -51,10 +52,10 @@
                     src="video/situps.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
-                    autoplay = "true"
+                    autoplay
                     muted
                     playsinline
                 ></video>
@@ -63,10 +64,10 @@
                     src="video/squat.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
-                    autoplay = "true"
+                    autoplay
                     muted
                     playsinline
                 ></video>
