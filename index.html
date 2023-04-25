@@ -30,8 +30,10 @@
   </div>
   <a-scene>
     <a-assets>
-    <video id="alpha2" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay loop="true"></video>
+    <video id="pushup" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay loop="true"></video>
+    <video id="situps" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay loop="true"></video>
   </a-assets>
+  <!-- pushup -->
     <a-nft
       type="nft"
       url="https://raw.githack.com/Rijecy/arphis/main/pic/pushup-nft/pushup"
@@ -41,10 +43,23 @@
       smoothThreshold="5"
     > 
     
-    <a-video id = "vid2" position = "250 -250 -200" rotation = "-90 0 0" scale="1250 400 1" src="#alpha2" autoplay muted>
+    <a-video id = "vid2" position = "250 -250 -200" rotation = "-90 0 0" scale="1250 400 1" src="#pushup" autoplay muted>
       <video scale= "250 100 1" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4"></video>
     </a-video>
-      <!-- <a-video id="test"  rotation = "-90 0 0" autoplay loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4"></a-video> -->
+    </a-nft>
+    <!-- sit ups -->
+    <a-nft
+      type="nft"
+      url="https://raw.githack.com/Rijecy/arphis/main/pic/situps-nft/situps"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance="0.01"
+      smoothThreshold="5"
+    > 
+    
+    <a-video id = "vid2" position = "250 -250 -200" rotation = "-90 0 0" scale="1250 400 1" src="#situps" autoplay muted>
+      <video scale= "250 100 1" src="https://raw.githack.com/Rijecy/arphis/main/video/situps.mp4"></video>
+    </a-video>
     </a-nft>
     <!-- position="200 0 -300" -->
     <!-- <a-nft 
