@@ -27,7 +27,8 @@
   <div class="arjs-loader">
     <div>Загрузка...</div>
   </div>
-  <a-scene embedded arjs='detectionMode: mono;'>
+  <a-scene embedded arjs='vr-mode-ui='enabled: false;'
+  embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
     <a-assets>
       <video id="pushup" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/pushup.mp4" autoplay loop="true"></video>
       <video id="situps" loop="true" src="https://raw.githack.com/Rijecy/arphis/main/video/situps.mp4" autoplay loop="true"></video>
