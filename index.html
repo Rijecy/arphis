@@ -5,7 +5,7 @@
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-        <!-- <script>
+        <script>
             AFRAME.registerComponent('videohandler', {
                 init: function () {
                     var marker = this.el;
@@ -28,7 +28,7 @@
                     }.bind(this));
                 },
             });
-        </script> -->
+        </script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -46,10 +46,11 @@
                     src="video/pushup.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
                     autoplay
+                    muted
                     playsinline
                 ></video>
                 <video
@@ -57,10 +58,11 @@
                     src="video/situps.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
                     autoplay
+                    muted
                     playsinline
                 ></video>
                 <video
@@ -68,10 +70,11 @@
                     src="video/squat.mp4"
                     preload="auto"
                     response-type="arraybuffer"
-                    loop = "true"
+                    loop
                     crossorigin
                     webkit-playsinline
                     autoplay
+                    muted
                     playsinline
                 ></video>
             </a-assets>
